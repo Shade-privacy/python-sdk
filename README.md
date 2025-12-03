@@ -25,7 +25,7 @@ Designed for multi-chain privacy, secure messaging, and frictionless intent-base
 
 ## 📦 Installation
 ```bash
-pip install shade-intent
+pip install shade-privacy
 ```
 
 ---
