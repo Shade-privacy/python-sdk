@@ -1,4 +1,4 @@
-from shade_privacy import ZKIntentSDK
+from veil_privacy import ZKIntentSDK
 
 # Initialize SDK
 sdk = ZKIntentSDK(

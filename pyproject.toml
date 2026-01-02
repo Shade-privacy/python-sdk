@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veil-privacy"
+version = "1.0.5"
+description = "Veil Privacy SDK — private execution & privacy tooling"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+  { name = "Peter Njuguna" }
+]

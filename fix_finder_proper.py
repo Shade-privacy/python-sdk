@@ -19,7 +19,7 @@ for i, line in enumerate(lines):
         # Check if it's empty
         if '= {}' in line:
             # Replace with our mapping
-            lines[i] = 'MAPPING: dict[str, str] = {"shade_privacy": "/home/pete/projects/sdks/shade_privacy"}\n'
+            lines[i] = 'MAPPING: dict[str, str] = {"veil_privacy": "/home/pete/projects/sdks/shade_privacy"}\n'
             print("✅ Updated MAPPING with our package")
             
             # Write back
@@ -70,8 +70,8 @@ for i, finder in enumerate(sys.meta_path):
         print(f"  {i}: {finder_type}")
 
 # Try to find the module
-spec = importlib.util.find_spec('shade_privacy')
-print(f"\nModule spec for 'shade_privacy': {spec}")
+spec = importlib.util.find_spec('veil_privacy')
+print(f"\nModule spec for 'veil_privacy': {spec}")
 
 if spec:
     print(f"✅ Success! Origin: {spec.origin}")
@@ -100,7 +100,7 @@ else:
     print("\n=== Fallback: Direct import ===")
     sys.path.insert(0, '/home/pete/projects/sdks/shade_privacy')
     try:
-        import shade_privacy as direct_module
+        import veil_privacy as direct_module
         print(f"✅ Direct import works! Module: {direct_module}")
         print(f"   File: {direct_module.__file__ if hasattr(direct_module, '__file__') else 'built-in'}")
     except Exception as e:

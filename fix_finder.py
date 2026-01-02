@@ -12,7 +12,7 @@ with open(finder_file, 'r') as f:
 # The MAPPING dictionary should map package names to paths
 # Add this after the MAPPING definition
 fix_code = '''
-MAPPING["shade_privacy"] = "/home/pete/projects/sdks/shade_privacy"
+MAPPING["veil_privacy"] = "/home/pete/projects/sdks/shade_privacy"
 '''
 
 # Find where MAPPING is defined and add our mapping
@@ -20,7 +20,7 @@ if 'MAPPING: dict[str, str] = {}' in content:
     # Replace empty dict with our mapping
     new_content = content.replace(
         'MAPPING: dict[str, str] = {}',
-        'MAPPING: dict[str, str] = {"shade_privacy": "/home/pete/projects/sdks/shade_privacy"}'
+        'MAPPING: dict[str, str] = {"veil_privacy": "/home/pete/projects/sdks/shade_privacy"}'
     )
     
     # Write back
@@ -37,7 +37,7 @@ if 'MAPPING: dict[str, str] = {}' in content:
     
     # Try to find the module
     import importlib.util
-    spec = importlib.util.find_spec('shade_privacy')
+    spec = importlib.util.find_spec('veil_privacy')
     print(f"Module spec after fix: {spec}")
     
     if spec:

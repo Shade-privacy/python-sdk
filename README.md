@@ -1,9 +1,9 @@
 markdown
 
-# ShadeIntent Python SDK
+# VeilIntent Python SDK
 
-[![PyPI version](https://img.shields.io/pypi/v/shade-intent.svg)](https://pypi.org/project/shade-intent/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/shade-intent.svg)](https://pypi.org/project/shade-intent/)
+[![PyPI version](https://img.shields.io/pypi/v/Veil-intent.svg)](https://pypi.org/project/Veil-intent/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/Veil-intent.svg)](https://pypi.org/project/Veil-intent/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Python SDK for creating private, cross-chain transaction intents using zero-knowledge proofs.  
@@ -25,14 +25,14 @@ Designed for multi-chain privacy, secure messaging, and frictionless intent-base
 
 ## 📦 Installation
 ```bash
-pip install shade-privacy
+pip install Veil-privacy
 ```
 
 ---
 
 ## 🚀 Quick Start
 ```python
-from shade_intent import ZKIntentSDK
+from Veil_intent import ZKIntentSDK
 
 # Initialize SDK
 sdk = ZKIntentSDK(
@@ -102,12 +102,12 @@ print(f"✅ Intent created! ID: {result.get('intentId')}")
 
 ### Initialize the SDK
 ```python
-from shade_intent import ZKIntentSDK
+from Veil_intent import ZKIntentSDK
 
 sdk = ZKIntentSDK(
     api_key="your_api_key",
     hmac_secret="your_hmac_secret",
-    base_url="https://api.shadeprivacy.com/api"
+    base_url="https://api.Veilprivacy.com/api"
 )
 ```
 
@@ -188,7 +188,7 @@ intents = sdk.list_intents(limit=10, offset=0)
 
 ### Error Handling
 ```python
-from shade_intent import ValidationError, APIError
+from Veil_intent import ValidationError, APIError
 
 try:
     sdk.create_intent(payload, signature)
@@ -274,7 +274,7 @@ with ZKIntentSDK(api_key, hmac_secret) as sdk:
 ## 🐛 Reporting Issues
 
 Report issues at:  
-**https://github.com/Shade-privacy/python-sdk/issues**
+**https://github.com/Veil-privacy/python-sdk/issues**
 
 ---
 
@@ -286,14 +286,14 @@ MIT License — see the `LICENSE` file.
 
 ## 🔗 Links
 
-- **GitHub**: https://github.com/Shade-privacy/python-sdk
+- **GitHub**: https://github.com/Veil-privacy/python-sdk
 -
 
 ---
 
 ## 🙏 Acknowledgments
 
-Built with ❤️ by the Shade Privacy team.
+Built with ❤️ by the Veil Privacy team.
 
 Special thanks to:
 - **StarkWare** for Cairo and STARKs
